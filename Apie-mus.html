@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CleanEco Lietuva</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Updated Menu Styles */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -300px; /* Initially hidden off-screen */
+            width: 300px;
+            height: 100%;
+            background: white; /* Changed to white */
+            color: black; /* Black text for better contrast */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: left 0.5s ease-in-out;
+            z-index: 9999;
+            overflow-y: auto;
+        }
+
+        #menu.visible {
+            left: 0;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #menu a {
+            text-decoration: none; /* Removed underline */
+            color: black; /* Black text */
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        #menu a:hover {
+            background: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+            color: #555; /* Slightly darker hover text */
+        }
+
+        /* Updated Menu Button */
+        #menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positioned on the right */
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        #menu-button img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #menu-button:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Sliding Menu Button -->
+        <button id="menu-button">
+            <img src="images/BUttooon.png" alt="Menu Button">
+        </button>
+
+        <!-- Sliding Menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Clean Eco</a></li>
+                <li><a href="Verslo-klijentams.html">Pirkti Verslui</a></li>
+                <li><a href="Namams.html">Pirkti Namams</a></li>
+                <li><a href="Rent a machine.html">Išsinuomoti Mašiną</a></li>
+                <li><a href="Katalogas.html">Katalogas</a></li>
+                <li><a href="#">Atsiliepimai</a></li>
+                <li><a href="Informacinis.html">Filosofija</a></li>
+                <li><a href="Apie-mus.html">Komanda</a></li>
+                <li><a href="susisiekti.html">Kontaktai</a></li>
+                <li><a href="Nuotraukos.html">Nuotraukos</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // Sliding Menu JavaScript
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('visible');
+            });
+        </script>
+
+        <!-- Existing Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">Clean Eco</a></h1>
+
+                <!-- Hero Section -->
+                <section id="hero" class="container">
+                    <header>
+                        <h2>CleanEco Lietuva</h2>
+                    </header>
+                    <ul class="actions">
+                        <li><a href="https://simplybook.me/en/" class="button">Išbandyti</a></li>
+                        <li><a href="https://simplybook.me/en/" class="button">Susisiekti</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Musu Komanda</h2>
+									<p>Jeigu reikia Susisiekti ar turite klausimu rasykite ect ect</p>
+								</header>
+								<a href="#" class="image featured"><img src="images/Screenshot 2024-09-25 121411.png" alt="" /></a>
+Žaliojo valymo koncepcija
+Švara yra vienas iš svarbiausių kriterijų, ar svečiai, klientai ar pacientai nori pas Jus sugrįžti, ir būtina tinkamos higienos sąlyga. Mūsų ekologiško valymo koncepcija apjungia itin efektyvų paviršių valymą ir profilaktinį apdorojimą, kad „saugomoje zonoje“ būtų kuo mažiau naujų nešvarumų. Tačiau esmė yra proceso optimizavimas jūsų individualiems valymo procesams. Tvarus ir ekologiškas, taupant laiką ir pinigus – ir 100 % švaresnis bei higieniškesnis!
+
+
+
+Trys žaliojo valymo koncepcijos ramsčiai:
+
+
+
+Prisotintais pramoniniais sausais garais efektyviai ir be likučių, be chemikalų ar valymo priemonių valome visus paviršius.
+Su nauja ProSeal produktų serija siūlome tobulą ir natūralią visų paviršių apsaugą. Paviršius yra apdorojamas siliciu natūraliu sandarinimo procesu, taip užkertant kelią naujiems nešvarumams.
+Optimizavome valymo procesus ir visiškai nenaudojame valymo priemonių. Standartizuotos procedūros supaprastina darbą, atlieka jį greičiau ir sumažina fizinę įtampą.
+
+
+Mikro sausais garais valome visus paviršius nepalikdami jokių likučių be chemikalų ir valymo priemonių. Šiluma ir aukštas slėgis išvalo medžiagas giliai, nepažeidžiant konstrukcijų.
+
+Su nauja ProSeal produktų serija siūlome tobulą ir natūralią visų paviršių apsaugą. Paviršius apsaugotas siliciu natūraliu statiniu sukibimu. Taigi nešvarumų ir priemaišų prasiskverbimas nebeįmanomas. Nešvarumai ir likučiai (pavyzdžiui, kalkės vonios kambariuose) nebegali tinkamai prilipti prie paviršiaus. Po apdorojimo vėlesni nešvarumai gali būti išvalyti per trumpesnį laiką ir higieniškiau. Paviršiaus struktūra išlaikoma, atsparumas slydimui ar paviršiaus blizgesys nesikeičia.
+
+Tuo pačiu metu optimizuojame, standartizuojame ir dokumentuojame jūsų individualius valymo procesus ir visiškai atsisakome toksiškų valymo priemonių. Galite sutaupyti išlaidų ir laiko gerindami savo svečių, klientų ir darbuotojų sveikatą.
+„Medicleantec Micro Cleaner“ yra didelio našumo šiluminio valymo įrenginys, veikiantis su sočiais, labai sausais mikro garais, kurie buvo sukurti pramoniniams tikslams ir iki šiol buvo naudojami tik ten. Esame vieninteliai, galintys šią pramoninę kokybę perkelti į patogų formatą. Tai reiškia, kad dabar jūs taip pat galite užtikrinti, kad visose verslo srityse būtų švaru be likučių. Medicleantec labai skiriasi nuo įprastų garų valytuvų – jam visų pirma būdinga aukščiausios klasės kokybė ir meistriškumas, ilgas tarnavimo laikas ir maksimalus našumas esant slėgiui ir karščiui.
+
+Įprasto valymo metu paviršinio aktyvumo medžiagos ir nešvarumai lieka porose. Paviršiai niekada negali tapti visiškai švarūs, o įprasti likučiai lemia greitesnį nešvarumą, nes nešvarumai prie jų geriau prilimpa.
+Medicleantec Micro Cleaner veikia su sausais mikro sausais garais, kurie generuojami naudojant patentuotą technologiją, patvirtintą pramonėje. Esminiai šių labai karštų ir sausų garų privalumai yra gilus porų valymas mažiausiomis vandens garų molekulėmis, taigi visų medžiagų valymas be dryžių ir greitas džiovinimas. Mikro sausų garų karštis taip pat suteikia dezinfekavimo efektą.
+Kuo skiriasi Medicleantec nuo įprastinių garų valiklių, kuriuos galbūt jau bandėte?
+
+Įprasti garų valytuvai nėra pakankamai galingi, kad valytų tikrai efektyviai, be to, dėl nepakankamo slėgio ir karščio garuose yra iki 40 % vandens, o tai reiškia, kad tik labai kietas ir atsparias medžiagas galima išvalyti nuo lengvų nešvarumų, bet ne. jautrioms medžiagoms, nes karštas vanduo gali pažeisti šių medžiagų paviršių (tekstilė, oda, plastikai, silikonai, siūlės ir kt.) ir netoleruoja per daug drėgmės (parketas, oda ir kt.).
+
+Mūsų Thermocleaner mikrosausuose garuose yra tik apytiksliai vandens. 5-8 proc. Tai pasiekiama esant aukštesnei nei 180 °C temperatūrai tiesiai ant kaitinimo elemento. Su šiais aukštos kokybės garais, sudarytais iš mažiausių garų molekulių (be vandens lašelių), galima lengvai ir ilgai valyti net jautrius paviršius, tokius kaip minkšti baldai, kilimai, oda, mediena ir plastikas. Tada medžiagos vėl išdžiūsta per labai trumpą laiką.
+
+Keletas ekspertų nuomonių ir patvirtinimo ataskaitų iš Austrijos ekspertų ir Vokietijos laboratorijų patvirtina unikalų veikimą ir didžiulius pranašumus, susijusius su efektyviu valymu, dideliu mikrobų mažinimu, laiko taupymu, ergonomika, darbuotojų sveikata ir sauga!
+
+Tačiau dėl ko Medicleantec yra toks išskirtinai efektyvus ir patvarus, taigi optimalus naudoti 24 valandas komercinėse įmonėse?
+Šias charakteristikas pasiekiame turėdami 3 patentus, kurie garantuoja 24 valandų veikimą:
+
+Patentuotas garo katilas iš nerūdijančio plieno (specialus suvirinimo procesas, išbandytas iki 70 barų slėgio, nebereikia sandarinimo žiedų)
+Patentuotas, savaime nukalkinantis kaitinimo elementas iš nerūdijančio plieno, nuimamas, 4 kartus didesnė už spiralinių šildytuvų galia: 28W/cm2 (palyginimui: standartiniai kaitinimo elementai - 7W/cm2), nėra tiesioginio kaitinimo elemento kontakto su vandeniu, todėl maksimalus , pastovi šildymo galia.
+Patentuota „True Temp Technology“ su savaime nukalkinėjančiu elektromechaniniu zondu nuolatiniam aukštai garų temperatūrai ir automatine papildymo sistema nuolatiniam veikimui
+
+Ką mes darome
+Valymas be chemikalų
+Parduodame, nuomojame ar nuomojame galingas „Medicleantec“ ir „Thermostar“ mikro sauso garo valymo mašinas namų ūkiams ir įmonėms. Turime bendro ir gilaus „žaliojo“ valymo patirties.
+Vykdome mokymus ir konsultuojame Žaliojo valymo koncepcijos klausimais. Turime apmokytų ir sertifikuotų „GREEN CLEANING“ paslaugų teikėjų, kurie naudoja mūsų technologijas ir metodus, duomenų bazę. „CleanEco Ireland“ daro viską paprastą, efektyvų, efektyvų ir prieinamą.
+
+
+
+Medicleantec valo tik vandeniu ir visiškai be chemikalų. Jis veikia su prisotintais mikro sausais garais ir yra efektyvesnis nei įprasti metodai.
+
+Šis metodas yra 100% be likučių ir higieniškas.
+
+Saugote aplinką ir savo sveikatą, sutaupydami pinigų ir laiko daugeliui valymo darbų.
+
+Daugumos pramonės šakų problema jau seniai nebėra nešvarumai, o cheminių medžiagų likučiai, daugybei atsparių mikrobų ir agresyvių valymo priemonių keliami pavojai darbuotojų ir klientų sveikatai. Su Medicleantec jūs turite atsakymą į visus šiuos iššūkius!
+							</article>
+
+						

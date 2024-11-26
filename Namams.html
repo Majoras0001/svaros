@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CleanEco Lietuva</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Updated Menu Styles */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -300px; /* Initially hidden off-screen */
+            width: 300px;
+            height: 100%;
+            background: white; /* Changed to white */
+            color: black; /* Black text for better contrast */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: left 0.5s ease-in-out;
+            z-index: 9999;
+            overflow-y: auto;
+        }
+
+        #menu.visible {
+            left: 0;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #menu a {
+            text-decoration: none; /* Removed underline */
+            color: black; /* Black text */
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        #menu a:hover {
+            background: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+            color: #555; /* Slightly darker hover text */
+        }
+
+        /* Updated Menu Button */
+        #menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positioned on the right */
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        #menu-button img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #menu-button:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Sliding Menu Button -->
+        <button id="menu-button">
+            <img src="images/BUttooon.png" alt="Menu Button">
+        </button>
+
+        <!-- Sliding Menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Clean Eco</a></li>
+                <li><a href="Verslo-klijentams.html">Pirkti Verslui</a></li>
+                <li><a href="Namams.html">Pirkti Namams</a></li>
+                <li><a href="Rent a machine.html">Išsinuomoti Mašiną</a></li>
+                <li><a href="Katalogas.html">Katalogas</a></li>
+                <li><a href="#">Atsiliepimai</a></li>
+                <li><a href="Informacinis.html">Filosofija</a></li>
+                <li><a href="Apie-mus.html">Komanda</a></li>
+                <li><a href="susisiekti.html">Kontaktai</a></li>
+                <li><a href="Nuotraukos.html">Nuotraukos</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // Sliding Menu JavaScript
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('visible');
+            });
+        </script>
+
+        <!-- Existing Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">Clean Eco</a></h1>
+
+                <!-- Hero Section -->
+                <section id="hero" class="container">
+                    <header>
+                        <h2>CleanEco Lietuva</h2>
+                    </header>
+                    <ul class="actions">
+                        <li><a href="https://simplybook.me/en/" class="button">Išbandyti</a></li>
+                        <li><a href="https://simplybook.me/en/" class="button">Susisiekti</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+						<div class="row gtr-150">
+							<div class="col-8 col-12-narrower">
+
+								<!-- Content -->
+									<article id="content">
+										<header>
+											<h2>Namams</h2>
+											<p>platus pasirinkimas namams.</p>
+										</header>
+										<a href="#" class="image featured"><img src="images/pool_aussen_jpg-original.jpeg" alt="" /></a>
+										<p>MediCleanTec Micro Cleaner yra didelio našumo šiluminio valymo įrenginys, veikiantis 
+											su labai sausais mikro garais, kurie anksčiau buvo sukurti ir naudojami tik pramoniniais 
+											tikslais. Taip visose srityse pasiekiama higieniška švara be likučių. Dėl savo kompaktiško 
+											dydžio „Micro Cleaner“ puikiai tinka tiek privatiems namų ūkiams, tiek mažesniems komerciniams 
+											vartotojams. Prietaisai labai skiriasi nuo įprastų garų valiklių – jiems visų pirma būdinga
+											 aukščiausios klasės kokybė ir meistriškumas, ilgas tarnavimo laikas, maksimalus našumas esant slėgiui ir karščiui bei 3 patentuoti unikalūs.
+											
+											</p>
+									</article>
+
+							</div>
+							<div class="col-4 col-12-narrower">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<header>
+												<h3>Užsisakykite nemokamą demonstraciją</h3>
+											</header>
+											<p>Pasirasyti pasibandymui.</p>
+											<ul class="actions">
+												<li><a href="https://cleanecoireland.simplybook.it/v2/#book/category/5/count/1/" class="button">Pasirasyti</a></li>
+											</ul>
+										</section>
+										<section>
+											<a href="Informacinis.html" class="image featured"><img src="images/5a4fadb6-b868-4574-88d5-05b66bc6a94c.jpg" alt="" /></a>
+											<header>
+												<h3>Sodo baldai, plastikas ir rotangas</h3>
+											</header>
+											<p>Priedai aparatams
+											</p>
+											<ul class="actions">
+												<li><a href="Katalogas.html" class="button">Pirkti</a></li>
+											</ul>
+											<ul class="actions">
+												<li><a href="Katalogas.html" class="button">Nuomai</a></li>
+											</ul>
+										</section>
+									</section>
+
+								</div>
+							</div>
+							<div class="row features">
+								<section class="col-4 col-12-narrower feature">
+									<div class="image-wrapper first">
+										<a href="#" class="image featured"><img src="images/5a4fadb6-b868-4574-88d5-05b66bc6a94c.jpg" alt="" /></a>
+									</div>
+									<header>
+										<h3>Vonia</h3>
+									</header>
+	
+	
+								</section>
+								<section class="col-4 col-12-narrower feature">
+									<div class="image-wrapper">
+										<a href="#" class="image featured"><img src="images/1950b258-b0e5-44e4-afc4-fbb1528598ba.jpg" alt="" /></a>
+									</div>
+									<header>
+										<h3>Virtuvė</h3>
+									</header>
+	
+	
+								</section>
+								<section class="col-4 col-12-narrower feature">
+									<div class="image-wrapper">
+										<a href="#" class="image featured"><img src="images/dabaf1e5-96d3-41e9-b73f-282d2dff2c7b.jpg" alt="" /></a>
+									</div>
+									<header>
+										<h3>Baldai</h3>
+									</header>
+	
+	
+								</section>
+	
+								<div class="row features">
+									<section class="col-4 col-12-narrower feature">
+										<div class="image-wrapper first">
+											<a href="#" class="image featured"><img src="images/3c3d90f1-11ec-44b9-953e-e7758990e6be (1).jpg" alt="" /></a>
+										</div>
+										<header>
+											<h3>Dviračiai ir motociklai</h3>
+										</header>
+		
+		
+									</section>
+									<section class="col-4 col-12-narrower feature">
+										<div class="image-wrapper">
+											<a href="#" class="image featured"><img src="images/4a2a80af-f3fb-4d10-824b-7efc65ef1119.jpg" alt="" /></a>
+										</div>
+										<header>
+											<h3>Siūlės jungtys ir tarpai</h3>
+										</header>
+		
+		
+									</section>
+									<section class="col-4 col-12-narrower feature">
+										<div class="image-wrapper">
+											<a href="#" class="image featured"><img src="images/82dba335-ddb4-4d05-b85a-d1b817786a29.jpg" alt="" /></a>
+										</div>
+										<header>
+											<h3>Laukas ir terasos</h3>
+										</header>
+									</section>
+	
+	
+									<div class="row features">
+										<section class="col-4 col-12-narrower feature">
+											<div class="image-wrapper first">
+												<a href="#" class="image featured"><img src="images/62e56b01db359934a641c5da_61868228eac48a749d9f5ffe_windows_steam_cleaning.webp" alt="" /></a>
+											</div>
+											<header>
+												<h3>Langai ir stiklas</h3>
+											</header>
+			
+			
+										</section>
+										<section class="col-4 col-12-narrower feature">
+											<div class="image-wrapper">
+												<a href="#" class="image featured"><img src="images/66e04489-5fbd-48ec-86cf-eca474de87e6.jpg" alt="" /></a>
+											</div>
+											<header>
+												<h3>Orkaitės</h3>
+											</header>
+			
+			
+										</section>
+										<section class="col-4 col-12-narrower feature">
+											<div class="image-wrapper">
+												<a href="#" class="image featured"><img src="images/dbe1e12a-7ab5-4e41-a52d-0b8d53a5585f.jpg" alt="" /></a>
+											</div>
+											<header>
+												<h3>Kilimai</h3>
+											</header>
+										</section>
+
+										<div class="row features">
+											<section class="col-4 col-12-narrower feature">
+												<div class="image-wrapper first">
+													<a href="#" class="image featured"><img src="images\a7e7374a-db39-4f78-a1bd-d57677bc4953.jpg" alt="" /></a>
+												</div>
+												<header>
+													<h3>Čiužiniai ir apmušalai</h3>
+												</header>
+				
+				
+											</section>
+											<section class="col-4 col-12-narrower feature">
+												<div class="image-wrapper">
+													<a href="#" class="image featured"><img src="images/837eced8-cdca-4e5c-b018-b3849a05d0ab.jpg" alt="" /></a>
+												</div>
+												<header>
+													<h3>Oda ir drabužiai</h3>
+												</header>
+				
+				
+											</section>
+											<section class="col-4 col-12-narrower feature">
+												<div class="image-wrapper">
+													<a href="#" class="image featured"><img src="images/page__en_lt_15479939930.jpeg" alt="" /></a>
+												</div>
+												<header>
+													<h3>Vaikų kambarys</h3>
+												</header>
+											</section>
+										
+		
+							</div>
+						</div>
+					</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

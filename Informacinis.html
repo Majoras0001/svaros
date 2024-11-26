@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CleanEco Lietuva</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Updated Menu Styles */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -300px; /* Initially hidden off-screen */
+            width: 300px;
+            height: 100%;
+            background: white; /* Changed to white */
+            color: black; /* Black text for better contrast */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: left 0.5s ease-in-out;
+            z-index: 9999;
+            overflow-y: auto;
+        }
+
+        #menu.visible {
+            left: 0;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #menu a {
+            text-decoration: none; /* Removed underline */
+            color: black; /* Black text */
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        #menu a:hover {
+            background: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+            color: #555; /* Slightly darker hover text */
+        }
+
+        /* Updated Menu Button */
+        #menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positioned on the right */
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        #menu-button img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #menu-button:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Sliding Menu Button -->
+        <button id="menu-button">
+            <img src="images/BUttooon.png" alt="Menu Button">
+        </button>
+
+        <!-- Sliding Menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Clean Eco</a></li>
+                <li><a href="Verslo-klijentams.html">Pirkti Verslui</a></li>
+                <li><a href="Namams.html">Pirkti Namams</a></li>
+                <li><a href="Rent a machine.html">Išsinuomoti Mašiną</a></li>
+                <li><a href="Katalogas.html">Katalogas</a></li>
+                <li><a href="#">Atsiliepimai</a></li>
+                <li><a href="Informacinis.html">Filosofija</a></li>
+                <li><a href="Apie-mus.html">Komanda</a></li>
+                <li><a href="susisiekti.html">Kontaktai</a></li>
+                <li><a href="Nuotraukos.html">Nuotraukos</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // Sliding Menu JavaScript
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('visible');
+            });
+        </script>
+
+        <!-- Existing Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">Clean Eco</a></h1>
+
+                <!-- Hero Section -->
+                <section id="hero" class="container">
+                    <header>
+                        <h2>CleanEco Lietuva</h2>
+                    </header>
+                    <ul class="actions">
+                        <li><a href="https://simplybook.me/en/" class="button">Išbandyti</a></li>
+                        <li><a href="https://simplybook.me/en/" class="button">Susisiekti</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+						<div class="row gtr-150">
+							<div class="col-4 col-12-narrower">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+
+										</section>
+										<section>
+											<a href="#" class="image featured"><img src="images/Micro.png" alt="" /></a>
+											<header>
+												<h3></h3>
+											</header>
+											<p>patikrinkite mūsų produktų sąrašą, kad surastumėte tobulą mašiną jūsų verslui</p>
+											<ul class="actions">
+												<li><a href="Katalogas.html" class="button">Spauskite cia</a></li>
+											</ul>
+										</section>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-narrower imp-narrower">
+
+								<!-- Content -->
+									<article id="content">
+										<header>
+											<h2>Filosofija</h2>
+											<p></p>
+										</header>
+										<a href="" class="image featured"><img src="images/mct_health_care_2_jpg-web.jpeg" alt="" /></a>
+										<p>Švara yra vienas iš svarbiausių kriterijų, ar svečiai, klientai ar pacientai nori pas Jus sugrįžti, ir būtina tinkamos higienos sąlyga. Mūsų ekologiško valymo koncepcija apjungia itin efektyvų paviršių valymą ir profilaktinį apdorojimą, kad „saugomoje zonoje“ būtų kuo mažiau naujų nešvarumų. Tačiau esmė yra proceso optimizavimas jūsų individualiems valymo procesams. Tvarus ir ekologiškas, taupant laiką ir pinigus – ir 100 % švaresnis bei higieniškesnis!</p>
+									</article>
+									<article id="content">
+										<header>
+											<h2>Pramonė</h2>
+											<p></p>
+										</header>
+										<a href="" class="image featured"><img src="images/mct_health_care_9_jpg-web.jpeg" alt="" /></a>
+										<p>„Medicleantec Micro Cleaner“ yra toks pat universalus, kaip to reikalauja jūsų poreikiai. Dėl daugybės priedų, kuriuos sukūrė dešimtmečius sukaupę ekspertai, jums to reikia tik valymo reikmėms. Būsite nustebinti, kiek laiko ir pinigų sutaupote, taip pat kaip lengva tai valdyti. Patirkite naujos rūšies švarą savo įmonėje. Jūsų darbuotojai ir klientai jums už tai padėkos!</p>
+									</article>
+									<article id="content">
+										<header>
+											<h2>Technologijos</h2>
+											<p></p>
+										</header>
+										<a href="" class="image featured"><img src="images/grill_edelstahlspachtel_2_jpg-original.jpeg" alt="" /></a>
+										<p>„Medicleantec Micro Cleaner“ yra didelio našumo šiluminio valymo įrenginys, veikiantis su sočiais, labai sausais mikro garais, kurie buvo sukurti pramoniniams tikslams ir iki šiol buvo naudojami tik ten. Esame vieninteliai, galintys šią pramoninę kokybę perkelti į patogų formatą. Tai reiškia, kad dabar jūs taip pat galite užtikrinti, kad visose verslo srityse būtų švaru be likučių. Medicleantec labai skiriasi nuo įprastų garų valytuvų – jam visų pirma būdinga aukščiausios klasės kokybė ir meistriškumas, ilgas tarnavimo laikas ir maksimalus našumas esant slėgiui ir karščiui.</p>
+									</article>
+									<article id="content">
+										<header>
+											<h2>Mūsų verslas</h2>
+											<p></p>
+										</header>
+										<a href="" class="image featured"><img src="images/buegeln_7_jpg-original.jpeg" alt="" /></a>
+										<p>Parduodame, nuomojame ar nuomojame galingas „Medicleantec“ ir „Thermostar“ mikro sauso garo valymo mašinas namų ūkiams ir įmonėms. Turime bendro ir gilaus „žaliojo“ valymo patirties.
+											Vykdome mokymus ir konsultuojame Žaliojo valymo koncepcijos klausimais. Turime apmokytų ir sertifikuotų „GREEN CLEANING“ paslaugų teikėjų, kurie naudoja mūsų technologijas ir metodus, duomenų bazę. „CleanEco Ireland“ daro viską paprastą, efektyvų, efektyvų ir prieinamą.</p>
+									</article>

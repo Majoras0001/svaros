@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CleanEco Lietuva</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Updated Menu Styles */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -300px; /* Initially hidden off-screen */
+            width: 300px;
+            height: 100%;
+            background: white; /* Changed to white */
+            color: black; /* Black text for better contrast */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: left 0.5s ease-in-out;
+            z-index: 9999;
+            overflow-y: auto;
+        }
+
+        #menu.visible {
+            left: 0;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #menu a {
+            text-decoration: none; /* Removed underline */
+            color: black; /* Black text */
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        #menu a:hover {
+            background: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+            color: #555; /* Slightly darker hover text */
+        }
+
+        /* Updated Menu Button */
+        #menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positioned on the right */
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        #menu-button img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #menu-button:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Sliding Menu Button -->
+        <button id="menu-button">
+            <img src="images/BUttooon.png" alt="Menu Button">
+        </button>
+
+        <!-- Sliding Menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Clean Eco</a></li>
+                <li><a href="Verslo-klijentams.html">Pirkti Verslui</a></li>
+                <li><a href="Namams.html">Pirkti Namams</a></li>
+                <li><a href="Rent a machine.html">Išsinuomoti Mašiną</a></li>
+                <li><a href="Katalogas.html">Katalogas</a></li>
+                <li><a href="#">Atsiliepimai</a></li>
+                <li><a href="Informacinis.html">Filosofija</a></li>
+                <li><a href="Apie-mus.html">Komanda</a></li>
+                <li><a href="susisiekti.html">Kontaktai</a></li>
+                <li><a href="Nuotraukos.html">Nuotraukos</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // Sliding Menu JavaScript
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('visible');
+            });
+        </script>
+
+        <!-- Existing Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">Clean Eco</a></h1>
+
+                <!-- Hero Section -->
+                <section id="hero" class="container">
+                    <header>
+                        <h2>CleanEco Lietuva</h2>
+                    </header>
+                    <ul class="actions">
+                        <li><a href="https://simplybook.me/en/" class="button">Išbandyti</a></li>
+                        <li><a href="https://simplybook.me/en/" class="button">Susisiekti</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    <style>
+        /* Slideshow Container */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        /* Slide */
+        .slide {
+            display: none;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Caption Text */
+        .caption {
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Navigation Arrows */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: -40px;
+        }
+
+        .next {
+            right: -40px;
+        }
+
+        /* Dots/Indicators */
+        .dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Slideshow Section -->
+        <div class="wrapper">
+            <div class="container">
+                <header class="major">
+                    <h2>Slideshow Gallery</h2>
+                    <p>Explore our featured products and highlights.</p>
+                </header>
+                <div class="slideshow-container">
+
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="images/grill_edelstahlspachtel_2_jpg-original.jpeg" alt="Gallery Image 1">
+                        <div class="caption">Caption for Image 1</div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="images/grill_edelstahlwolle_2_jpg-original.jpeg" alt="Gallery Image 2">
+                        <div class="caption">Caption for Image 2</div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="images/MCT-Micro-Cleaner-24-7-auf-Geraetewagen.jpg" alt="Gallery Image 3">
+                        <div class="caption">Caption for Image 3</div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Dots/Indicators -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <div id="footer" class="container">
+                <header class="major">
+                    <h2>Eco svara ateitis!</h2>
+                    <p>Jei turite klausimų ar norti užsakyti, rašykite mums.</p>
+                </header>
+                <div class="row">
+                    <section class="col-6 col-12-narrower">
+                        <form method="post" action="#">
+                            <div class="row gtr-50">
+                                <div class="col-6 col-12-mobile">
+                                    <input name="name" placeholder="Name" type="text" />
+                                </div>
+                                <div class="col-6 col-12-mobile">
+                                    <input name="email" placeholder="Email" type="text" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                        <li><input type="reset" value="Clear form" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div id="copyright" class="container">
+                <ul class="menu">
+                    <li>&copy; CLEANECOLIETUVA. All rights reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>

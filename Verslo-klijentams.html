@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CleanEco Lietuva</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        /* Updated Menu Styles */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -300px; /* Initially hidden off-screen */
+            width: 300px;
+            height: 100%;
+            background: white; /* Changed to white */
+            color: black; /* Black text for better contrast */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: left 0.5s ease-in-out;
+            z-index: 9999;
+            overflow-y: auto;
+        }
+
+        #menu.visible {
+            left: 0;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #menu a {
+            text-decoration: none; /* Removed underline */
+            color: black; /* Black text */
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        #menu a:hover {
+            background: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+            color: #555; /* Slightly darker hover text */
+        }
+
+        /* Updated Menu Button */
+        #menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positioned on the right */
+            border: none;
+            background: none;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        #menu-button img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #menu-button:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Sliding Menu Button -->
+        <button id="menu-button">
+            <img src="images/BUttooon.png" alt="Menu Button">
+        </button>
+
+        <!-- Sliding Menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Clean Eco</a></li>
+                <li><a href="Verslo-klijentams.html">Pirkti Verslui</a></li>
+                <li><a href="Namams.html">Pirkti Namams</a></li>
+                <li><a href="Rent a machine.html">Išsinuomoti Mašiną</a></li>
+                <li><a href="Katalogas.html">Katalogas</a></li>
+                <li><a href="#">Atsiliepimai</a></li>
+                <li><a href="Informacinis.html">Filosofija</a></li>
+                <li><a href="Apie-mus.html">Komanda</a></li>
+                <li><a href="susisiekti.html">Kontaktai</a></li>
+                <li><a href="Nuotraukos.html">Nuotraukos</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // Sliding Menu JavaScript
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.getElementById('menu');
+
+            menuButton.addEventListener('click', () => {
+                menu.classList.toggle('visible');
+            });
+        </script>
+
+        <!-- Existing Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">Clean Eco</a></h1>
+
+                <!-- Hero Section -->
+                <section id="hero" class="container">
+                    <header>
+                        <h2>CleanEco Lietuva</h2>
+                    </header>
+                    <ul class="actions">
+                        <li><a href="https://simplybook.me/en/" class="button">Išbandyti</a></li>
+                        <li><a href="https://simplybook.me/en/" class="button">Susisiekti</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+						<div class="row gtr-150">
+							<div class="col-4 col-12-narrower">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<header>
+												<h3>Verslo klientams informacija</h3>
+											</header>
+											<p></p>
+											<ul class="actions">
+												<li><a href="Informacinis.html" class="button">Daugiau informacijos</a></li>
+											</ul>
+										</section>
+										<section>
+											<a href="Katalogas.html" class="image featured"><img src="images/Micro.png" alt="" /></a>
+											<header>
+												<h3></h3>
+											</header>
+											<p>patikrinkite mūsų produktų sąrašą, kad surastumėte tobulą mašiną jūsų verslui</p>
+											<ul class="actions">
+												<li><a href="Katalogas.html" class="button">Pirkti</a></li>
+											</ul>
+											<ul class="actions">
+												<li><a href="Katalogas.html" class="button">Nuomai</a></li>
+											</ul>
+										</section>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-narrower imp-narrower">
+
+								<!-- Content -->
+									<article id="content">
+										<header>
+											<h2>Verslui</h2>
+											<p></p>
+										</header>
+										<a href="#" class="image featured"><img src="images/fea8d1e7-b979-41f6-a9ce-22f2ecbfe091.jpg" alt="" /></a>
+										<p>„Medicleantec Micro Cleaner“ yra didelio našumo šiluminio valymo įrenginys, veikiantis su sočiais, labai sausais mikro garais, 
+											kurie buvo sukurti pramoniniams tikslams ir iki šiol buvo naudojami tik ten. Esame vieninteliai, galintys šią pramoninę kokybę
+											 perkelti į patogų formatą. Tai reiškia, kad dabar jūs taip pat galite užtikrinti, kad visose verslo srityse būtų švaru be likučių. 
+											 Medicleantec labai skiriasi nuo įprastų garų valytuvų – jam visų pirma būdinga aukščiausios klasės kokybė ir meistriškumas, ilgas 
+											 tarnavimo laikas ir maksimalus našumas esant slėgiui ir karščiui.</p>
+									</article>
+
+							</div>
+						</div>
+						<div class="row features">
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper first">
+									<a href="#" class="image featured"><img src="images/Hotel.png" alt="" /></a>
+								</div>
+								<header>
+									<h3>Viešbučiams</h3>
+								</header>
+
+
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/mct_health_care_2_jpg-web.jpeg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Gydymo įstaigos</h3>
+								</header>
+
+
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/maxresdefault.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Parduotuvės</h3>
+								</header>
+
+
+							</section>
+
+							<div class="row features">
+								<section class="col-4 col-12-narrower feature">
+									<div class="image-wrapper first">
+										<a href="#" class="image featured"><img src="images/CubeSpace.jpg" alt="" /></a>
+									</div>
+									<header>
+										<h3>Biurai</h3>
+									</header>
+	
+	
+								</section>
+								<section class="col-4 col-12-narrower feature">
+									<div class="image-wrapper">
+										<a href="#" class="image featured"><img src="images/2024-buick-encore-gx-avenir-007.jpg" alt="" /></a>
+									</div>
+									<header>
+										<h3>Transportas</h3>
+									</header>
+	
+	
+								</section>
+								<section class="col-4 col-12-narrower feature">
+									<div class="image-wrapper">
+										<a href="#" class="image featured"><img src="images/images.jpg" alt="" /></a>
+									</div>
+									<header>
+										<h3>Restoranai ir kavinės</h3>
+									</header>
+								</section>
+
+
+								<div class="row features">
+									<section class="col-4 col-12-narrower feature">
+										<div class="image-wrapper first">
+											<a href="#" class="image featured"><img src="images/klase-japoniskoje-mokykloje-5f9c0d1a1c8f2.jpg" alt="" /></a>
+										</div>
+										<header>
+											<h3>Ugdymas</h3>
+										</header>
+		
+		
+									</section>
+									<section class="col-4 col-12-narrower feature">
+										<div class="image-wrapper">
+											<a href="#" class="image featured"><img src="images/images (3).jpg" alt="" /></a>
+										</div>
+										<header>
+											<h3>maisto gamyba</h3>
+										</header>
+		
+		
+									</section>
+									<section class="col-4 col-12-narrower feature">
+										<div class="image-wrapper">
+											<a href="#" class="image featured"><img src="images/images (1).jpg" alt="" /></a>
+										</div>
+										<header>
+											<h3>Auto ir laivai</h3>
+										</header>
+									</section>
+									
+	
+						</div>
+					</div>
+				</div>
+				
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>Euismod aliquam vehicula lorem</h2>
+							<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit<br />
+							dolor neque semper magna lorem ipsum feugiat veroeros lorem ipsum dolore.</p>
+						</header>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<form method="post" action="#">
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobile">
+											<input name="name" placeholder="Name" type="text" />
+										</div>
+										<div class="col-6 col-12-mobile">
+											<input name="email" placeholder="Email" type="text" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" placeholder="Message"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+												<li><input type="reset" value="Clear form" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="row gtr-0">
+									<ul class="divided icons col-6 col-12-mobile">
+										<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
+										<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
+										<li class="icon brands fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
+									</ul>
+									<ul class="divided icons col-6 col-12-mobile">
+										<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
+										<li class="icon brands fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
+										<li class="icon brands fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>&copy; CLEANECOLIETUVA. All rights reserved.</li><li>Designer: Majoras</a></li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
